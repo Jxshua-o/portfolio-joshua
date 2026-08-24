@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a class="nav__logo" href="#top">Joshua <span class="nav__dot">.</span></a>
+
+            <button class="nav__toggle" id="navToggle" aria-label="Openmenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav__list" id="navList">
+                <li><a class="nav__link" href="#about">About</a></li>
+                <li><a class="nav__link" href="#projects">Projects</a></li>
+                <li><a class="nav__link" href="#skills">Skills</a></li>
+                <li><a class="nav__link" href="#contacts">Contacts</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="top">
+        <div class="container hero__inner">
+            <p class="hero__greeting">Hi, My name is</p>
+            <h1 class="hero__name">Joshua</h1>
+            <h2 class="hero__tagline" id="heroTagline">
+                I build things for the web.
+            </h2>
+            <p class="hero__text">
+                I am a builder at Kokoodi Academy learning HTML, CSS and JavaScript. This page is where i keep everything i have made so far.
+            </p>
+
+            <div class="hero__actions">
+                <a class="btn btn--primary" href="#projects">See my work</a>
+                <a class="btn btn--ghost" href="#contact">Get in touch</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section" id="about">
+        <div class="'container">
+            <h2 class="section__title">About me</h2>
+            <p class="section__subtitle">A little bit about me.</p>
+
+            <div class="about">
+                <div class="about__avatar" aria-hidden="true">J</div>
+
+                    <div class="about__text">
+                        <p>
+                            My name is Joshua. I am learning how to build websites at Kokoodi
+                            Academy. I started with HTML, then CSS for styling, and now I am
+                            writing JavaScript to make my pages interactive.
+                        </p>
+
+                        <p>
+                            When I am not coding, I like football, music and playing games. My
+                            goal is to build a full website of my own from start to finish.
+                        </p>
+
+                        <ul class="about__facts">
+                            <li><strong>Learning:</strong> HTML, CSS, JavaScript</li>
+                            <li><strong>Camp:</strong> Kokoodi Academy General Camp</li>
+                            <li><strong>Working on:</strong> this portfolio</li>
+                        </ul>
+                    </div>
+                </div>
+
+        </div>
+    </section>
+    
+</body>
+</html>

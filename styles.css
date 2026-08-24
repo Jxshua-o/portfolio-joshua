@@ -1,0 +1,165 @@
+:root{
+    --colour-bg: #0f172a;
+    --colour-bg-alt: #16213c;
+    --colour-card: #1c2745;
+    --colour-text: #e6ecf7;
+    --colour-muted: #9aabc4;
+    --colour-accent: #4ade80;
+    --colour-accent-dark: #22c55a;
+    --radius: 14px;
+    --space: 20px;
+    --max-width: 1000px;
+    --font-body: 'Segoe UI' , 'Helvetica Neue' , Arial , sans-serif
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-body);
+    background-color: var(--colour-bg);
+    color: var(--colour-text);
+    line-height: 1.6;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+a{
+    color: var(--colour-accent);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+ul{
+    list-style: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: var(--radius);
+    font-weight: 600;
+    transition:
+        transform 0.2s ease;
+        background-color: 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.btn--primary {
+    background-color: var(--colour-accent);
+    color: #0b1220
+}
+
+.btn--primary:hover {
+    background-color: var(--colour-accent);
+}
+
+.btn--ghost {
+    border: 2px solid var(--colour-accent);
+    color: var(--colour-accent)
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(15, 23, 42, 0.9);
+    border-bottom: 1px solid #24304f;
+}
+
+.nav {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 16px var(--space);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo{
+    font-size: 1.25rem;
+    font-weight: 700;
+    colour: var(--colour-text);
+}
+.nav__dot {
+    color: var(--colour-accent);
+}
+
+.nav__list {
+    display: flex;
+    gap: 28px;
+}
+
+.nav__link {
+    color: var(--colour-muted);
+    font-weight: 500;
+}
+
+.nav__link:hover {
+    color: var(--colour-accent);
+    text-decoration: none;
+}
+
+.nav__toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background-color: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.nav__toggle span {
+    width: 26px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: var(--colour-text);
+
+}
+
+.hero {
+    padding: 120px 0 100px;
+}
+
+.hero__greeting {
+    color: var(--colour-accent);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.hero__name {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin: 8px 0;
+}
+
+.hero__tagline {
+    font-size: 1.75rem;
+    color: var(--colour-muted);
+    margin-bottom: 20px;
+}
+
+.hero__text {
+    max-width: 520px;
+    color: var(--colour-muted);
+    margin-bottom: 32px;
+}
+
+.hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
