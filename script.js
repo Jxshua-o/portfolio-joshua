@@ -13,6 +13,12 @@ navLinks.forEach(function (link) {
     })
 })
 
+const taglines = [
+    'I build things for the web',
+    'I am learning javascript',
+    'I am a Kokoodi Builder'
+];
+
 const taglineElement = document.getElementById('heroTagline');
 let taglineIndex = 0;
 let letterIndex = 0;
@@ -26,7 +32,7 @@ function typeTagline() {
     if (letterIndex > currentTagline.length) {
         letterIndex = 0;
         taglineIndex = (taglineIndex + 1) % taglines.length;
-        setTimeout = (typeTagline, 1500);
+        setTimeout(typeTagline, 1500);
         return;
     }
     setTimeout(typeTagline, 90);
